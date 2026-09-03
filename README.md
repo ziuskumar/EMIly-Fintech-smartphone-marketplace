@@ -25,6 +25,9 @@
 <p align="center">
   <img src="./server/public/images/FrontPage.png" alt="EMIly marketplace preview" width="100%">
 </p>
+<p align="center">
+  <img src="./server/public/images/ProdImg.png" alt="EMIly marketplace preview" width="100%">
+</p>
 
 ---
 
