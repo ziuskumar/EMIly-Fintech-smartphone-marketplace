@@ -23,7 +23,7 @@
 > **Tip:** Replace the preview image below with a screenshot from your deployed application once available.
 
 <p align="center">
-  <img src="https://placehold.co/1200x650/png?text=EMIly+%E2%80%94+Smartphone+Marketplace" alt="EMIly marketplace preview" width="100%">
+  <img src="image.png" alt="EMIly marketplace preview" width="100%">
 </p>
 
 ---
@@ -70,17 +70,17 @@ The application separates **products, purchasable configurations, images, prices
 
 ### Customer-facing
 
-| Feature | Description |
-|---|---|
-| 📱 Smartphone catalogue | Browse current flagship and mid-range devices |
-| 🔍 Search | Search the catalogue by product information |
-| 🏷️ Brand filtering | Filter products by manufacturer |
-| 💵 Price filtering | Filter by minimum and maximum price |
-| ↕️ Sorting | Featured, newest, lowest-price and highest-price sorting |
-| 🎨 Variants | Select storage, colour and other configuration-specific data |
-| 🖼️ Product images | Images are associated with individual variants |
-| 🏦 EMI comparison | View lender plans for the selected configuration |
-| 📱 Responsive UI | Designed for desktop and mobile layouts |
+| Feature                 | Description                                                  |
+| ----------------------- | ------------------------------------------------------------ |
+| 📱 Smartphone catalogue | Browse current flagship and mid-range devices                |
+| 🔍 Search               | Search the catalogue by product information                  |
+| 🏷️ Brand filtering      | Filter products by manufacturer                              |
+| 💵 Price filtering      | Filter by minimum and maximum price                          |
+| ↕️ Sorting              | Featured, newest, lowest-price and highest-price sorting     |
+| 🎨 Variants             | Select storage, colour and other configuration-specific data |
+| 🖼️ Product images       | Images are associated with individual variants               |
+| 🏦 EMI comparison       | View lender plans for the selected configuration             |
+| 📱 Responsive UI        | Designed for desktop and mobile layouts                      |
 
 ### Engineering
 
@@ -100,17 +100,17 @@ The application separates **products, purchasable configurations, images, prices
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Frontend | React 19, Vite |
-| Styling | Tailwind CSS |
-| Routing | React Router |
-| Backend | Node.js, Express |
-| Validation | Zod |
-| ORM | Prisma |
-| Database | PostgreSQL |
-| Web server | Nginx |
-| Containers | Docker, Docker Compose |
+| Layer      | Technology                                       |
+| ---------- | ------------------------------------------------ |
+| Frontend   | React 19, Vite                                   |
+| Styling    | Tailwind CSS                                     |
+| Routing    | React Router                                     |
+| Backend    | Node.js, Express                                 |
+| Validation | Zod                                              |
+| ORM        | Prisma                                           |
+| Database   | PostgreSQL                                       |
+| Web server | Nginx                                            |
+| Containers | Docker, Docker Compose                           |
 | AWS target | ECR, ECS Fargate, RDS, Secrets Manager, ALB, ACM |
 
 ---
@@ -457,13 +457,13 @@ Returns EMI plans available for a specific variant.
 
 The catalogue endpoint supports:
 
-| Parameter | Purpose |
-|---|---|
-| `search` | Search products |
-| `brand` | Filter by brand |
-| `minPrice` | Minimum price |
-| `maxPrice` | Maximum price |
-| `sort` | Sort catalogue results |
+| Parameter  | Purpose                |
+| ---------- | ---------------------- |
+| `search`   | Search products        |
+| `brand`    | Filter by brand        |
+| `minPrice` | Minimum price          |
+| `maxPrice` | Maximum price          |
+| `sort`     | Sort catalogue results |
 
 ### Supported sorting
 
@@ -573,14 +573,14 @@ A production deployment can follow this architecture:
 
 ### Recommended AWS components
 
-| Component | AWS Service |
-|---|---|
-| Container registry | Amazon ECR |
-| Web/API containers | ECS Fargate |
-| Database | Amazon RDS for PostgreSQL |
-| Secrets | AWS Secrets Manager |
-| Load balancing | Application Load Balancer |
-| HTTPS | AWS Certificate Manager (ACM) |
+| Component          | AWS Service                   |
+| ------------------ | ----------------------------- |
+| Container registry | Amazon ECR                    |
+| Web/API containers | ECS Fargate                   |
+| Database           | Amazon RDS for PostgreSQL     |
+| Secrets            | AWS Secrets Manager           |
+| Load balancing     | Application Load Balancer     |
+| HTTPS              | AWS Certificate Manager (ACM) |
 
 ### Deployment outline
 
@@ -760,16 +760,16 @@ VITE_API_URL=http://localhost:4000/api
 
 ## 📌 Project Status
 
-| Area | Status |
-|---|---|
-| React frontend | ✅ Complete |
-| REST API | ✅ Complete |
-| PostgreSQL + Prisma | ✅ Complete |
-| Product/variant catalogue | ✅ Complete |
-| EMI plans | ✅ Complete |
-| Docker Compose | ✅ Ready |
-| AWS container architecture | ✅ Documented |
-| Live AWS deployment | ⏳ Not claimed |
+| Area                       | Status         |
+| -------------------------- | -------------- |
+| React frontend             | ✅ Complete    |
+| REST API                   | ✅ Complete    |
+| PostgreSQL + Prisma        | ✅ Complete    |
+| Product/variant catalogue  | ✅ Complete    |
+| EMI plans                  | ✅ Complete    |
+| Docker Compose             | ✅ Ready       |
+| AWS container architecture | ✅ Documented  |
+| Live AWS deployment        | ⏳ Not claimed |
 
 ---
 
