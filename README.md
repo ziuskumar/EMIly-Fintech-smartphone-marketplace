@@ -20,10 +20,10 @@
 
 ## 📸 Product Preview
 
-> **Tip:** Replace the preview image below with a screenshot from your deployed application once available.
+<!-- > **Tip:** Replace the preview image below with a screenshot from your deployed application once available. -->
 
 <p align="center">
-  <img src="image.png" alt="EMIly marketplace preview" width="100%">
+  <img src="./server/public/images/FrontPage.png" alt="EMIly marketplace preview" width="100%">
 </p>
 
 ---
