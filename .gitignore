@@ -3,5 +3,5 @@ dist
 .env
 server/prisma/dev.db
 *.log
-
 .vercel
+scratch/

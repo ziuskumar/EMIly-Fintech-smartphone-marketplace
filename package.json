@@ -1,14 +1,16 @@
 {
   "name": "emi-marketplace",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "install:all": "npm install --prefix server && npm install --prefix client",
     "db:generate": "npm run prisma:generate --prefix server",
     "db:seed": "npm run prisma:seed --prefix server",
-    "vercel-build": "npm install --prefix client && npx prisma generate --schema server/prisma/schema.prisma && npm run build --prefix client"
+    "vercel-build": "mkdir -p client/public/images && cp -r server/public/images/* client/public/images/ && npm install --prefix client && npx prisma generate --schema server/prisma/schema.prisma && npm run build --prefix client"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
     "@prisma/client": "^6.3.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -16,7 +18,7 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "prisma": "^6.3.1",
-    "concurrently": "^9.1.2"
+    "concurrently": "^9.1.2",
+    "prisma": "^6.3.1"
   }
 }

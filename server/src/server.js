@@ -5,7 +5,7 @@ import productRoutes from "./routes/product.routes.js";
 import { errorHandler, notFound } from "./middleware/errorHandler.js";
 import catalogRoutes from "./routes/catalog.routes.js";
 const app = express();
-app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:5173" }));
+app.use(cors());
 app.use(express.json());
 app.use("/images", express.static("public/images"));
 app.get("/api/health", (req, res) => res.json({ status: "ok" }));
