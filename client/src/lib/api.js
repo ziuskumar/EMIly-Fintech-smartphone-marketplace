@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_URL || "http://localhost:4000/api";
+const BASE = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? "/api" : "http://localhost:4000/api");
 export const assetUrl = (source) =>
   source?.startsWith("/") ? `${BASE.replace(/\/api$/, "")}${source}` : source;
 export async function getProducts(params = {}) {

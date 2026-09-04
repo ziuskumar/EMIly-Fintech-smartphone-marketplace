@@ -13,6 +13,9 @@ app.use("/api/products", productRoutes);
 app.use("/api", catalogRoutes);
 app.use(notFound);
 app.use(errorHandler);
-app.listen(process.env.PORT || 4000, () =>
-  console.log(`API running on port ${process.env.PORT || 4000}`),
-);
+export default app;
+if (process.env.VERCEL !== "1") {
+  app.listen(process.env.PORT || 4000, () =>
+    console.log(`API running on port ${process.env.PORT || 4000}`),
+  );
+}
