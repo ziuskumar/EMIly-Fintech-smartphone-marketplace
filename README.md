@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  Product discovery • Variant-aware pricing • EMI plans • REST API • PostgreSQL • Docker • AWS-ready architecture
+  Product discoverys • Variant-aware pricing • EMI plans • REST API • PostgreSQL • Docker • AWS-ready architecture
 </p>
 
 ---
